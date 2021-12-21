@@ -43,7 +43,7 @@
 
     <div class='container'>
         <?php
-            for($i = 0; $i < count($domande);$i++) : ?>
+            for($i = 0; $i < count($domande);$i++) ?>
                 <div class='contain'>
                     <h2><?php echo $domande[$i]['domanda'] ?></h2>
                     <p><?php echo $domande[$i]['paragrafo-1'] ?></p>
