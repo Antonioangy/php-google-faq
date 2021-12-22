@@ -40,17 +40,40 @@
 
         
     ?>
+    <header>
+        <div class="sopra">
+            <div class="logo">
+                <img src="https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg" alt="">
+            </div>
+            
+            <span> Privacy e termini</span>
+        </div>
 
+        <div class="sotto">
+            <div class="list-container">
+                <ul>
+                    <li>Introduzione</li>
+                    <li>Norme sulla privacy</li>
+                    <li>Termini di servizio</li>
+                    <li>Tecnologie</li>
+                    <li>Domande frequenti</li>
+                </ul>
+            </div>
+        </div>
+
+    </header>
     <div class='container'>
-        <?php
-            for($i = 0; $i < count($domande);$i++) ?>
+        <?php 
+            for($i = 0; $i < count($domande);$i++) {?> 
+                
+             
                 <div class='contain'>
                     <h2><?php echo $domande[$i]['domanda'] ?></h2>
                     <p><?php echo $domande[$i]['paragrafo-1'] ?></p>
                     <p><?php echo $domande[$i]['paragrafo-2'] ?></p>
                     <p><?php echo $domande[$i]['paragrafo-3'] ?></p> 
                 </div>
-        <?php endfor; ?>
+        <?php    }?>
            
     </div>
 </body>
